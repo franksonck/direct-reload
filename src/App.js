@@ -78,8 +78,7 @@ class App extends Component {
   }
 
   componentDidUpdate() {
-    console.log('updating...');
-    window.twttr && window.twttr.widgets.load();
+    window.twttr && window.twttr.widgets && window.twttr.widgets.load && window.twttr.widgets.load();
     window.iframeResize && window.iframeResize();
   }
 

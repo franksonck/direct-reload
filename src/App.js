@@ -61,7 +61,7 @@ class App extends Component {
 
   update() {
     const self = this;
-    fetch('data/lemissionpolitique.yml')
+    fetch(window.direct)
       .then(function (res) {
         if (res.status === 200) {
           return res.text();

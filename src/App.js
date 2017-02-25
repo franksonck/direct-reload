@@ -57,7 +57,7 @@ class App extends Component {
 
   update() {
     const self = this;
-    fetch(window.direct)
+    fetch(`${window.direct}?${Date.now()}`)
       .then(function (res) {
         if (res.status === 200) {
           return res.text();

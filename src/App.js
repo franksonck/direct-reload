@@ -70,7 +70,7 @@ class App extends Component {
 
   componentDidMount() {
     this.update();
-    window.setInterval(this.update, 60 * 1000);
+    window.setInterval(this.update, 15 * 1000);
   }
 
   componentDidUpdate() {

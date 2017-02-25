@@ -9,7 +9,7 @@ import classNames from 'classnames';
 function Evenement(props) {
   const {time, content, image, img_full_width} = props;
   const id = time.replace(':', '_');
-  const processed_content = marked(content);
+  const processed_content = marked(content || '');
   const twitter_content = encodeURIComponent(sanitizeHtml(processed_content, {
     allowedTags: [],
     allowedAttributes: {},

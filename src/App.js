@@ -15,8 +15,8 @@ function Evenement(props) {
     allowedAttributes: {},
   }).slice(0, 115));
 
-  const facebookUrl = `https://www.facebook.com/sharer/sharer.php?u=https%3A//observatoire.jlm2017.fr/%23${id}`;
-  const twitterUrl = `https://twitter.com/home?status=${twitter_content}%0A%20https%3A//observatoire.jlm2017.fr/%23${id}`;
+  const facebookUrl = `https://www.facebook.com/sharer/sharer.php?u=https%3A//${window.location.hostname}/%23${id}`;
+  const twitterUrl = `https://twitter.com/home?status=${twitter_content}%0A%20https%3A//${window.location.hostname}/%23${id}`;
 
   return (
     <div id={time.replace(':', '_')}>

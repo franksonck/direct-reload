@@ -41,8 +41,8 @@ function Evenement(props) {
         <p>
           <a target="_blank"
              href={facebookUrl}>Partager
-            sur Facebook</a> -
-          <a target="_blank"
+            sur Facebook</a>
+          - <a target="_blank"
              href={twitterUrl}>Partager
             sur Twitter</a>
         </p>

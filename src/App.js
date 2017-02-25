@@ -38,13 +38,9 @@ function Evenement(props) {
           :
           <div dangerouslySetInnerHTML={{__html: processed_content}}/>
         }
-        <p>
+        <p className="text-right small">
           <a target="_blank"
-             href={facebookUrl}>Partager
-            sur Facebook</a>
-          - <a target="_blank"
-             href={twitterUrl}>Partager
-            sur Twitter</a>
+             href={facebookUrl}>Partager sur Facebook</a> - <a target="_blank" href={twitterUrl}>Partager sur Twitter</a>
         </p>
       </div>
     </div>
